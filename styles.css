@@ -6,6 +6,32 @@ body {
   height:100%;
 }
 
+.parallax {
+  -webkit-perspective : 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer.names {
+  padding: 40vh;
+}
+.parallax__layer.date {
+  padding: 90vh;
+}
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+}
+.parallax__layer--back {
+  -webkit-transform: translateZ(-1px) scale(2);
+}
+
 #home {
   background: url(jonandpatricia.jpg) no-repeat center center scroll;
   height: 100%;
@@ -15,12 +41,12 @@ body {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  padding: 80vh;
 }
 
 .floatingcenter{
   margin: 0 auto;
-  width: 900px;
-  display: table-cell;
+  /*width: 900px;*/
 }
 
 .names h1, .date h1{

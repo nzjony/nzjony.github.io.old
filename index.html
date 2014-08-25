@@ -25,12 +25,12 @@
   <body>
 <div id="skrollr-body">
 </div>
-    <header id="home"data-0="background-position:50% 0px;"
-      data-500="background-position:50% -200px;" >
-        <div class="floatingcenter names">
-          <h1>Patricia and Jonathan</h1>
+    <header class="parallax" >
+        <img id="home" class="parallax__layer parallax__layer--back" />
+        <div class="floatingcenter names parallax__layer parallax__layer--base">
+          <h1 class="">Patricia and Jonathan</h1>
         </div>
-        <div class="floatingcenter date">
+        <div class="floatingcenter date parallax__layer parallax__layer--base">
           <h1> Heiraten am </h1>
           <h1> 01.05.2015 </h1>
         </div>
@@ -102,9 +102,9 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-      skrollr.init({
-        forceHeight:false
-      });
+      // skrollr.init({
+      //   forceHeight:false
+      // });
     </script>
 
   </body>
