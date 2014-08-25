@@ -1,0 +1,47 @@
+html {
+  height:100%;
+}
+
+body {
+  height:100%;
+}
+
+#home {
+  background: url(jonandpat.jpg) no-repeat center center scroll;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.floatingcenter{
+  margin: 0 auto;
+  width: 900px;
+  display: table-cell;
+}
+
+.names h1, .date h1{
+  font:700 55px/55px "futura-pt", sans-serif;
+  color: #FFF;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.names{
+  top:25px;
+  position:absolute;
+  left:0px;
+  right:0px;
+}
+
+.date{
+  position:absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+}
