@@ -61,6 +61,14 @@ body {
   /*width: 900px;*/
 }
 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .names h1, .date h1{
+    font:700 35px/35px "futura-pt", sans-serif;
+  }
+}
+
 .names h1, .date h1{
   font:700 55px/55px "futura-pt", sans-serif;
   color: #EEE;
