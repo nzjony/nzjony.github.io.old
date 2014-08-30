@@ -72,7 +72,7 @@ body {
 }
 
 @media only screen
-and (max-width : 320px) {
+and (max-width : 500px) {
   .names h1, .date h1{
     font:700 35px/35px "futura-pt", sans-serif;
   }
