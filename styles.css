@@ -32,10 +32,10 @@ body {
   left: 0;
 }
 .parallax__layer.names {
-  padding: 25vh 0 0 0;
+  padding: 10vh 0 0 0;
 }
 .parallax__layer.date {
-  padding: 60vh 0 0 0;
+  padding: 40vh 0 0 0;
 }
 .parallax__layer--base {
   -webkit-transform: translateZ(0);
@@ -45,7 +45,7 @@ body {
 }
 
 #home {
-  background: url(jonandpatricia.jpg) no-repeat center center scroll;
+  background: url(jono_happy.jpg) no-repeat center center scroll;
   height: 100%;
   width: 100%;
   -webkit-background-size: cover;
@@ -62,7 +62,9 @@ body {
 }
 
 .names h1, .date h1{
-  font:700 55px/55px "futura-pt", sans-serif;
+  font-weight:700;
+  font-size: 55px/55px;
+  font-family: 'Pacifico', cursive;
   color: #EEE;
   letter-spacing: 8px;
   text-transform: uppercase;
@@ -74,12 +76,11 @@ body {
 @media only screen
 and (max-width : 500px) {
   .names h1, .date h1{
-    font:700 35px/35px "futura-pt", sans-serif;
+    font-size: 35px/35px;
   }
 }
 
 .names{
-  top:25px;
   position:absolute;
   left:0px;
   right:0px;
