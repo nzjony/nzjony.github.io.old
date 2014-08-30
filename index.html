@@ -24,51 +24,30 @@
     <![endif]-->
   </head>
   <body>
-<div id="skrollr-body">
-</div>
-    <header class="parallax" >
-        <img id="home" class="parallax__layer parallax__layer--back" />
-        <div class="floatingcenter names parallax__layer parallax__layer--base">
-          <h1 class="">Patricia and Jonathan</h1>
-        </div>
-        <div class="floatingcenter date parallax__layer parallax__layer--base">
-          <h1> Heiraten am </h1>
-          <h1> 01.05.2015 </h1>
-        </div>
-      </header>
-
-    <div class="cooltext">
-        <h1> in </h1>
-        <h1 id="countdown-holder"></h1>
-    </div>
-    <hr class="featurette-divider">
-
-    <div class="container maincontent">
-
-
-      <div class="page_header">
-        <h1>More info coming soon... Mehrere Infos folgen...</h1>
+    <div id="mainbody" class="parallax" >
+      <img id="home" class="parallax__layer parallax__layer--back" />
+      <div class="floatingcenter names parallax__layer parallax__layer--base">
+        <h1 class="">Patricia and Jonathan</h1>
+      </div>
+      <div class="floatingcenter date parallax__layer parallax__layer--base">
+        <h1> Heiraten am </h1>
+        <h1> 01.05.2015 </h1>
       </div>
 
-<hr class="featurette-divider">
-
-      <!--
+      <!--The countdown-->
+      <div class="timer">
+          <h1> in </h1>
+          <h1 id="countdown-holder"></h1>
+      </div>
       <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading" id="contact">Location. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <!--Where all the main stuff is-->
+      <div class="container maincontent">
+        <div class="page_header">
+          <h1>More info coming soon... Mehrere Infos folgen...</h1>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="holder.svg" alt="Generic placeholder image">
-        </div>
+        <hr class="featurette-divider">
       </div>
-
-      <div style="height:700px">
-        here some more stuff
-      </div>-->
-
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -78,17 +57,19 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-      // skrollr.init({
-      //   forceHeight:false
-      // });
-
-    var clock = $("#countdown-holder");
-    var targetDate = new Date(2015, 04, 01, 11, 00 ); //Marrying 1st of May
-    var str =
-    clock.text(countdown(targetDate).toString());
-    setInterval(function(){
+      var clock = $("#countdown-holder");
+      var targetDate = new Date(2015, 04, 01, 11, 00 ); //Marrying 1st of May
+      var str =
       clock.text(countdown(targetDate).toString());
-    }, 1000);
+      setInterval(function(){
+        clock.text(countdown(targetDate).toString());
+      }, 1000);
+
+      $("#mainbody").scroll(function() {
+        var distanceScrolled = $(this).scrollTop();
+        $('#home').css('-webkit-filter', 'blur('+distanceScrolled/60+'px)')
+        .css('opacity', 1- distanceScrolled/1400);
+      });
     </script>
 
   </body>

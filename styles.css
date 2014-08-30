@@ -4,16 +4,18 @@ html {
 
 body {
   height:100%;
+  overflow:hidden;
 }
 
-.cooltext {
+.timer {
   position:relative;
   margin-top:-130px;
-  z-index:-1;
+  padding-top:50vh;
 }
 
-.cooltext h1 {
+.timer h1 {
   text-align:center;
+  color: #333;
 }
 
 .parallax {
@@ -40,10 +42,11 @@ body {
 }
 .parallax__layer--back {
   -webkit-transform: translateZ(-0.75px) scale(1.75);
+  -webkit-filter: blur(1px);
 }
 
 #home {
-  background: url(jonandpatricia.jpg) no-repeat center center scroll;
+  background: url(jonandpatricia1.jpg) no-repeat center center scroll;
   height: 100%;
   width: 100%;
   -webkit-background-size: cover;
@@ -61,11 +64,12 @@ body {
 
 .names h1, .date h1{
   font:700 55px/55px "futura-pt", sans-serif;
-  color: #FFF;
+  color: #EEE;
   letter-spacing: 8px;
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 20px 0;
+  text-shadow: 0 0 3px #000;
 }
 
 .names{
