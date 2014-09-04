@@ -44,7 +44,18 @@ body {
   -webkit-transform: translateZ(-0.75px) scale(1.75);
 }
 
-#home {
+#backgrounds {
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index:-1;
+}
+
+#home_jono {
   background: url(jono_happy.jpg) no-repeat center center scroll;
   height: 100%;
   width: 100%;
@@ -53,6 +64,18 @@ body {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  /*padding: 80vh 0 0 0;*/
+}
+
+#home_patricia {
+  background: url(patricia_happy.jpg) no-repeat center center scroll;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: floating;
   /*padding: 80vh 0 0 0;*/
 }
 
