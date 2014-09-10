@@ -72,7 +72,7 @@
 
       $("#mainbody").scroll(function() {
         var distanceScrolled = $(this).scrollTop();
-        $('#backgrounds').css('-webkit-filter', 'blur('+distanceScrolled/60+'px)');
+        //$('#backgrounds').css('-webkit-filter', 'blur('+distanceScrolled/60+'px)');
         $('#backgrounds').css('opacity', 1- distanceScrolled/1400);
       });
 
