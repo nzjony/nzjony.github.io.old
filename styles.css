@@ -20,6 +20,7 @@ body {
 
 .parallax {
   -webkit-perspective : 1px;
+  perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -39,9 +40,13 @@ body {
 }
 .parallax__layer--base {
   -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .parallax__layer--back {
   -webkit-transform: translateZ(-0.75px) scale(1.75);
+  -ms-transform: translateZ(-0.75px) scale(1.75);
+  transform: translateZ(-0.75px) scale(1.75);
 }
 
 #backgrounds {
