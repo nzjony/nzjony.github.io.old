@@ -16,6 +16,7 @@ body {
 .timer h1 {
   text-align:center;
   color: #333;
+  font-family: 'Special Elite', cursive;
 }
 
 .parallax {
@@ -104,6 +105,9 @@ body {
 and (max-width : 500px) {
   .names h1, .date h1{
     font-size: 35px/35px;
+  }
+  .parallax__layer.date {
+    padding: 50vh 0 0 0;
   }
 }
 
