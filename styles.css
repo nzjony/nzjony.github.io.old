@@ -98,10 +98,12 @@ and (max-width : 767px) {
   #home_jono {
       background: url(images/jono_happy_small.jpg) no-repeat center center scroll;
       position: relative;
+      height: 125%
   }
   #home_patricia {
       background: url(images/patricia_happy_small.jpg) no-repeat center center scroll;
       position: floating;
+      height: 125%
   }
 }
 
