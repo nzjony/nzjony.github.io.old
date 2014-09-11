@@ -62,7 +62,7 @@ body {
 }
 
 #home_jono {
-  background: url(jono_happy.jpg) no-repeat center center scroll;
+  background: url(images/jono_happy.jpg) no-repeat center center scroll;
   height: 100%;
   width: 100%;
   -webkit-background-size: cover;
@@ -74,7 +74,7 @@ body {
 }
 
 #home_patricia {
-  background: url(patricia_happy.jpg) no-repeat center center scroll;
+  background: url(images/patricia_happy.jpg) no-repeat center center scroll;
   height: 100%;
   width: 100%;
   -webkit-background-size: cover;
@@ -83,6 +83,25 @@ body {
   background-size: cover;
   position: floating;
   /*padding: 80vh 0 0 0;*/
+}
+
+@media only screen
+and (max-width : 1300px) {
+  #home_jono {
+      background: url(images/jono_happy_med.jpg) no-repeat center center scroll;
+  }
+  #home_patricia {
+      background: url(images/patricia_happy_med.jpg) no-repeat center center scroll;
+  }
+}
+@media only screen
+and (max-width : 767px) {
+  #home_jono {
+      background: url(images/jono_happy_small.jpg) no-repeat center center scroll;
+  }
+  #home_patricia {
+      background: url(images/patricia_happy_small.jpg) no-repeat center center scroll;
+  }
 }
 
 .floatingcenter{
