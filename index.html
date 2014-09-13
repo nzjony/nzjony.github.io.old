@@ -31,6 +31,8 @@
         <img id="home_jono" class="background_image" />
         <img id="home_patricia" class="background_image" />
       </div>
+      <div class="parallax__layer parallax__layer--back hide_scrolling_text">
+      </div>
       <div class="floatingcenter names parallax__layer parallax__layer--base">
         <h1 class="">Patricia und Jonathan</h1>
       </div>
@@ -47,11 +49,35 @@
       <hr class="featurette-divider">
 
       <!--Where all the main stuff is-->
-      <div class="container maincontent">
+      <div class="container-fluid maincontent">
         <div class="page_header">
           <h1>More info coming soon... Mehr Infos folgen...</h1>
         </div>
         <hr class="featurette-divider">
+        <div class="row">
+          <div class="col-md-6 patricia">
+            <h3>The Bride</h3>
+            <h4>Patricia Colditz<h4>
+            <p>
+                This is something about patricia, how lovely she is or something
+                she is...
+            </p>
+            <p>
+                This may be some more text, who knows right?
+            </p>
+          </div>
+          <div class="col-md-6 jonathan">
+            <h3>The Groom</h3>
+            <h4>Jonathan Stichbury<h4>
+            <p>
+                This is something about jonathan, about how he is so muscly and
+                dreamy....
+            </p>
+            <p>
+                This may be some more text, who knows right?
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -78,6 +104,15 @@
 
       var fader1 = new Fader(document.getElementById('backgrounds'), 1);
       fader1.setInterval(4);
+
+      // Google analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54775124-1', 'auto');
+      ga('send', 'pageview');
     </script>
 
   </body>

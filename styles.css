@@ -11,12 +11,14 @@ body {
   position:relative;
   margin-top:-130px;
   padding-top:50vh;
+  z-index:-3;
 }
 
 .timer h1 {
   text-align:center;
   color: #333;
   font-family: 'Special Elite', cursive;
+  z-index:-1;
 }
 
 .parallax {
@@ -150,4 +152,17 @@ and (max-width : 500px) {
 
 .page_header h1 {
   text-align:center;
+}
+
+.patricia {
+  text-align:right;
+}
+
+.jonathan {
+
+}
+
+.hide_scrolling_text {
+  background-color: #fff;
+  z-index:-2;
 }
