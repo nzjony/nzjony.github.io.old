@@ -181,3 +181,7 @@ and (max-width : 500px) {
   border-top: 1px #BBB solid;
   border-bottom: 1px #BBB solid;
 }
+
+body {
+  background-color: #FBFBFB;
+}
