@@ -154,8 +154,12 @@ and (max-width : 500px) {
   text-align:center;
 }
 
-.patricia {
+.right_align {
   text-align:right;
+}
+
+.center_align {
+  text-align:center;
 }
 
 .jonathan {
@@ -165,4 +169,15 @@ and (max-width : 500px) {
 .hide_scrolling_text {
   background-color: #fff;
   z-index:-2;
+}
+
+.row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.odd_row {
+  background-color: #F3F3F3;
+  border-top: 1px #BBB solid;
+  border-bottom: 1px #BBB solid;
 }
