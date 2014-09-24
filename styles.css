@@ -177,11 +177,19 @@ and (max-width : 500px) {
 }
 
 .odd_row {
-  background-color: #F3F3F3;
+  background-color: #F6ECE3;
   border-top: 1px #BBB solid;
   border-bottom: 1px #BBB solid;
 }
 
 body {
   background-color: #FBFBFB;
+}
+
+.glyphicon {
+  font-size: 50px;
+}
+
+.icon {
+  max-height: 100px;
 }
