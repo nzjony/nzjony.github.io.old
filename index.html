@@ -132,14 +132,38 @@
 
         <div class="row">
           <div class="col-md-12 center_align">
-            <iframe id="iframe" src="https://docs.google.com/forms/d/1WnBnAw63GVWwP7WBWlrXiSkMZ9Zrtl20gq3ay3ctpO0/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <iframe id="iframe" src="https://docs.google.com/forms/d/1WnBnAw63GVWwP7WBWlrXiSkMZ9Zrtl20gq3ay3ctpO0/viewform?embedded=true" width="700px" height="660px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
           </div>
         </div>
 
+        <div class="container footer">
+          <ul class="list-inline">
+            Copyright © Jonathan 2014, more info <a href="#" id="thanks">here.</a>
+          </ul>
+        </div>
       </div>
 
     </div>
-
+    <div id="thanks" class="jumbotron">
+      <h1>Thanks so much!</h1>
+      <p>
+        This website was not possible without:
+      </p>
+      <ul>
+        <li><a href="http://getbootstrap.com/">Bootstrap</a> under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">license</a></li>
+        <li>
+            Images from <a href="http://www.freepik.com/">Freepik</a>
+            used were <a href="http://www.freepik.com/free-vector/paquete-de-dia-de-felicitacion-antiguo_701886.htm">this</a>
+            and <a href="http://www.flaticon.com/packs/home-icons">this</a>
+            and <a href="http://static.freepik.com/download/23/2147486/2147485930.zip">this</a>
+            and <a href="http://www.freepik.com/free-photos-vectors/vintage">this</a>
+        </li>
+        <li>My beautiful girl Patricia</li>
+        <li>My trusty Macbook Pro 2010</li>
+        <li>LOTS of inspiration from: <a href="http://courtneyandrew.com/">http://courtneyandrew.com/</a>, if you ever read this, big thanks!!</li>
+      </ul>
+      <a href="#" id="goback">Go back</a>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -175,6 +199,14 @@
 
       var iframe = $('#iframe');
       iframe.remove('.ss_footer');
+
+      $("#thanks").click( function() {
+        $("#mainbody").hide();
+      })
+
+      $("#goback").click( function() {
+        $("#mainbody").toggle();
+      })
     </script>
   </body>
 </html>
