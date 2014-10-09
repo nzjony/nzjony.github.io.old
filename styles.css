@@ -211,3 +211,8 @@ body {
   padding: 3px 3px 0px 3px;
   z-index: 1;
 }
+
+.language_choice {
+  width:20px;
+  margin-bottom:3px;  
+}
