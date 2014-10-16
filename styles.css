@@ -52,6 +52,49 @@ body {
   transform: translateZ(-0.75px) scale(1.75);
 }
 
+
+@media only screen
+and (max-width : 767px) {
+  .parallax__layer {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: relative;
+  }
+  .parallax {
+    -webkit-perspective : 0px;
+    perspective: 0px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .parallax__layer.names {
+    padding: 10% 0 0 0;
+    position: relative;
+  }
+  .parallax__layer.date {
+    padding: 30% 0 0 0;
+  }
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0px);
+    -ms-transform: translateZ(0px);
+    transform: translateZ(0px);
+  }
+  .parallax__layer--back {
+    -webkit-transform: translateZ(0px);
+    -ms-transform: translateZ(0px);
+    transform: translateZ(0px);
+  }
+  .timer {
+    position:relative;
+    margin-top:0px;
+    padding-top:0px;
+    z-index:-3;
+  }
+}
+
 #backgrounds {
   height: 100%;
   width: 100%;
@@ -125,11 +168,23 @@ and (max-width : 767px) {
 
 @media only screen
 and (max-width : 500px) {
+
+  #backgrounds {
+    height: 500px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index:-1;
+  }
+
   .names h1, .date h1{
     font-size: 35px/35px;
   }
   .parallax__layer.date {
-    padding: 50vh 0 0 0;
+    padding: 0;
   }
 }
 
@@ -144,6 +199,20 @@ and (max-width : 500px) {
   bottom: 25px;
   left: 0;
   right: 0;
+}
+
+@media only screen
+and (max-width : 500px) {
+  .names {
+    position: absolute;
+    top: -60%;
+    height: 0px;
+  }
+  .date {
+    position: relative;
+    top: -30%;
+    height: 0px;
+  }
 }
 
 .maincontent {
@@ -214,5 +283,5 @@ body {
 
 .language_choice {
   width:20px;
-  margin-bottom:3px;  
+  margin-bottom:3px;
 }
