@@ -171,13 +171,23 @@ and (max-width : 500px) {
 
   #backgrounds {
     height: 500px;
-    width: 400px;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
-    background-size: auto;
+    width: 100%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
     position: relative;
     z-index:-1;
+  }
+
+
+  .background_image {
+    height: 500px;
+    width: 100%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: containt;
   }
 
   .names h1, .date h1{
@@ -205,12 +215,12 @@ and (max-width : 500px) {
 and (max-width : 500px) {
   .names {
     position: absolute;
-    top: -60%;
+    top: -130%;
     height: 0px;
   }
   .date {
     position: relative;
-    top: -30%;
+    top: -70%;
     height: 0px;
   }
 }
