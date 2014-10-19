@@ -181,12 +181,36 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
+      var is_english = document.URL.indexOf("english") > 0;
+
+      // Serious hack for the countdown holder. Simply do a string replace on the text.
+      function convert_to_german( string )
+      {
+        return string.replace( "months", "Monaten" )
+          .replace( "month", "Monat" )
+          .replace( "days", "Tagen" )
+          .replace( "day", "Tag" )
+          .replace( "hours", "Stunden" )
+          .replace( "hour", "Stude" )
+          .replace( "minutes", "Minuten" )
+          .replace( "minute", "Minute" )
+          .replace( "seconds", "Sekunden" )
+          .replace( "secon", "Sekunde" );
+      }
+
       var clock = $("#countdown-holder");
       var targetDate = new Date(2015, 04, 01, 11, 00 ); //Marrying 1st of May
-      var str =
       clock.text(countdown(targetDate).toString());
+      if( !is_english )
+      {
+        clock.text( convert_to_german( clock.text( ) ) );
+      }
       setInterval(function(){
         clock.text(countdown(targetDate).toString());
+        if( !is_english )
+        {
+          clock.text( convert_to_german( clock.text( ) ) );
+        }
       }, 1000);
 
       $("#mainbody").scroll(function() {
@@ -219,7 +243,7 @@
         $("#mainbody").toggle();
       });
 
-      if( document.URL.indexOf("english") > 0 )
+      if( is_english )
       {
         $("#preferenglish").hide();
       }
