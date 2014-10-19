@@ -193,6 +193,7 @@
         var distanceScrolled = $(this).scrollTop();
         //$('#backgrounds').css('-webkit-filter', 'blur('+distanceScrolled/60+'px)');
         $('#backgrounds').css('opacity', 1- distanceScrolled/1400);
+        $('.language_preference').css('top', distanceScrolled+"px" );
       });
 
       var fader1 = new Fader(document.getElementById('backgrounds'), 1);
