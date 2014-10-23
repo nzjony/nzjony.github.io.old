@@ -260,6 +260,14 @@ and (max-width : 500px) {
   background-color: white;
 }
 
+.headerlink:hover {
+  text-decoration:none;
+}
+
+.headerlink h3 {
+  color:black;
+}
+
 .odd_row {
   background-color: #F6ECE3;
   border-top: 1px #BBB solid;
@@ -298,4 +306,8 @@ body {
 .language_choice {
   width:20px;
   margin-bottom:3px;
+}
+
+.copyright {
+  margin-top: 20px;
 }
