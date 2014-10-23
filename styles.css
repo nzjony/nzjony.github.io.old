@@ -2,7 +2,7 @@ html {
   height:100%;
 }
 
-body {
+body .main {
   height:100%;
   overflow:hidden;
 }
@@ -310,4 +310,8 @@ body {
 
 .copyright {
   margin-top: 20px;
+}
+
+.image {
+  max-width: 768px;
 }
