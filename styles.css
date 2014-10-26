@@ -130,12 +130,12 @@ and (max-width : 767px) {
 @media only screen
 and (max-width : 1300px) {
   #home_jono {
-      background: url(images/IMG_7444.jpg) no-repeat center center scroll;
+      background: url(images/IMG_7444.JPG) no-repeat center center scroll;
       background-size:inherit;
       position: relative;
   }
   #home_patricia {
-      background: url(images/IMG_7452.jpg) no-repeat center center scroll;
+      background: url(images/IMG_7452.JPG) no-repeat center center scroll;
       background-size:inherit;
       position: floating;
   }
