@@ -22,6 +22,7 @@
 
     <script type="text/javascript" src="../js/countdown.min.js"></script>
     <script type="text/javascript" src="../js/Fader.compressed.js"></script>
+    <script type="text/javascript" src="../js/contact-dev.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -65,11 +66,11 @@
       </p>
       <p>
 Wenn ihr dabei seid, worüber wir uns sehr freuen würden, dann bitten wir um eine verbindliche Anmeldung bis <strong>28.02.15</strong></br>
-Hier der Link zu unserer Mailadresse: patricia.colditz (@) gmx (.) de </br>
+Hier der Link zu unserer Mailadresse: <a class="patricias_email"></a> </br>
 Über Beiträge zu abendlichen Unterhaltung würden wir uns sehr freuen, diese gehen bitte an die Moderatoren des Abends, die Schwestern der Braut.
-Dazu hier der Link</br>
+Dazu hier der Link <a class="louisas_email"></a> und <a class="natalies_email"></a>.
 Es wird eine Kinderecke geben sowie einen kleinen Innenhof, den wir mitnutzen können.
-Weitere Fragen und Wünsche können bei der Trauzeugin Norma eingereicht werden.
+Weitere Fragen und Wünsche können bei der Trauzeugin Norma eingereicht werden: <a class="normas_email"></a>.
       </p>
       </div>
       <div class="en">
@@ -91,9 +92,9 @@ Weitere Fragen und Wünsche können bei der Trauzeugin Norma eingereicht werden.
       </p>
       <p>
 For those planning to come, we ask kindly to register your confirmed attendance by the latest: <strong>28th Februrary 2015</strong></br>
-Link to our mail address: TBD</br>
-We are more than happy for you to register your contribution to the evening programme. Examples include a short skit, game or story. Please send this to the sisters of the Bride (MC's of the evening): INSERT LINK HERE</br>
-There will be a place for kids to play as well as a courtyard next to the celebration hall. Other questions and wishes can be sent to the maid of honour, Norma: EMAIL OF NORMA
+Link to our mail address: <a class="patricias_email"></a></br>
+We are more than happy for you to register your contribution to the evening programme. Examples include a short skit, game or story. Please send this to the sisters of the Bride (MC's of the evening): <a class="louisas_email"></a> and <a class="natalies_email"></a>.</br>
+There will be a place for kids to play as well as a courtyard next to the celebration hall. Other questions and wishes can be sent to the maid of honour, Norma: <a class="normas_email"></a>
       </p>
       </div>
     </div>
@@ -108,6 +109,18 @@ There will be a place for kids to play as well as a courtyard next to the celebr
     {
       $('.en').hide( );
     }
+
+    var string = "p" + decode("2c224716e4d7b6c8d3998fb267486b0229c0e5bb617b390a");
+    $(".patricias_email").attr('href',"mailto:" + string ).html(string);
+
+    string = "n" + decode("2c224716e4d7b6fdea9387b65d76636921f6dcbc670a");
+    $(".normas_email").attr('href',"mailto:" + string ).html(string);
+
+    string = "l" + decode("2c224716e4d7b6c8d3998fb26748150213cad1bc590a");
+    $(".louisas_email").attr('href',"mailto:" + string ).html(string);
+
+    string = "n" + decode("2c224728dce7b68f90a8bfb152415b0059cee58152480ee60a");
+    $(".natalies_email").attr('href',"mailto:" + string ).html(string);
 
     </script>
   </body>
