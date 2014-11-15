@@ -229,6 +229,12 @@ and (max-width : 500px) {
     top: -70%;
     height: 0px;
   }
+  .jumbotron p {
+    font-size: 14px;
+  }
+  .jumbotron .image {
+    max-width: 100%;
+  }
 }
 
 .maincontent {
