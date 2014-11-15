@@ -219,7 +219,7 @@ and (max-width : 500px) {
   }
   .date {
     position: absolute;
-    top: 200px;
+    top: 250px;
     height: 0px;
   }
   .parallax__layer.names {
