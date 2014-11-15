@@ -70,13 +70,6 @@ and (max-width : 767px) {
     overflow-x: hidden;
     overflow-y: auto;
   }
-  .parallax__layer.names {
-    padding: 10% 0 0 0;
-    position: relative;
-  }
-  .parallax__layer.date {
-    padding: 30% 0 0 0;
-  }
   .parallax__layer--base {
     -webkit-transform: translateZ(0px);
     -ms-transform: translateZ(0px);
@@ -221,13 +214,19 @@ and (max-width : 700px) {
 and (max-width : 500px) {
   .names {
     position: absolute;
-    top: -130%;
+    top: 75px;
     height: 0px;
   }
   .date {
-    position: relative;
-    top: -70%;
+    position: absolute;
+    top: 200px;
     height: 0px;
+  }
+  .parallax__layer.names {
+    padding: 0;
+  }
+  .parallax__layer.date {
+    padding: 0;
   }
   .jumbotron p {
     font-size: 14px;
