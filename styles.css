@@ -116,13 +116,13 @@ and (max-width : 767px) {
 }
 
 #home_jono {
-  background: url(images/jono_happy.jpg) no-repeat center center scroll;
+  background: url(images/IMG_7444.jpg) no-repeat center center scroll;
   position: relative;
   /*padding: 80vh 0 0 0;*/
 }
 
 #home_patricia {
-  background: url(images/patricia_happy.jpg) no-repeat center center scroll;
+  background: url(images/IMG_7452.jpg) no-repeat center center scroll;
   position: floating;
   /*padding: 80vh 0 0 0;*/
 }
@@ -143,11 +143,11 @@ and (max-width : 1300px) {
 @media only screen
 and (max-width : 767px) {
   #home_jono {
-      background: url(images/jono_happy_med.jpg) no-repeat center center scroll;
+      background: url(images/IMG_7444_small.jpg) no-repeat center center scroll;
       position: relative;
   }
   #home_patricia {
-      background: url(images/patricia_happy_med.jpg) no-repeat center center scroll;
+      background: url(images/IMG_7452_small.jpg) no-repeat center center scroll;
       position: floating;
   }
 }
