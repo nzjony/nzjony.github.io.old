@@ -231,6 +231,9 @@ and (max-width : 500px) {
   .jumbotron p {
     font-size: 14px;
   }
+  .jumbotron ul {
+    font-size: 12px;
+  }
   .jumbotron .image {
     max-width: 100%;
   }
