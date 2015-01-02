@@ -108,20 +108,20 @@ and (max-width : 767px) {
   background-size: cover;
 }
 
-#home_jono {
+/*#home_jono {
   background: url(images/IMG_7444.jpg) no-repeat center center scroll;
   position: relative;
-  /*padding: 80vh 0 0 0;*/
+  padding: 80vh 0 0 0;
 }
 
 #home_patricia {
   background: url(images/IMG_7452.jpg) no-repeat center center scroll;
   position: floating;
-  /*padding: 80vh 0 0 0;*/
-}
-
+  padding: 80vh 0 0 0;
+}*/
+/*
 @media only screen
-and (max-width : 1300px) {
+and (max-width : 1300px) {*/
   #home_jono {
       background: url(images/IMG_7444.JPG) no-repeat center center scroll;
       background-size:inherit;
@@ -132,7 +132,7 @@ and (max-width : 1300px) {
       background-size:inherit;
       position: floating;
   }
-}
+/*}*/
 @media only screen
 and (max-width : 767px) {
   #home_jono {
